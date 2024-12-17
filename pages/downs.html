@@ -1,0 +1,53 @@
+<div class="downs-page">
+    <div class="header">
+        <h1>击倒记录</h1>
+        <div class="filters">
+            <div class="date-range">
+                <input type="date" class="date-picker">
+                <span>至</span>
+                <input type="date" class="date-picker">
+            </div>
+            <input type="text" class="search-input" placeholder="搜索玩家...">
+            <select class="status-filter">
+                <option value="all">所有状态</option>
+                <option value="revived">已救起</option>
+                <option value="dead">已阵亡</option>
+            </select>
+            <button class="btn primary"><i class="fas fa-search"></i> 搜索</button>
+        </div>
+    </div>
+
+    <div class="downs-list">
+        <div class="down-item">
+            <div class="down-info">
+                <div class="player downer">
+                    <img src="assets/avatar.png" class="player-avatar">
+                    <div class="player-details">
+                        <span class="name">Attacker123</span>
+                        <span class="team us">美军</span>
+                    </div>
+                </div>
+                <div class="down-details">
+                    <i class="fas fa-heart-broken"></i>
+                    <span class="weapon">PKM</span>
+                    <span class="distance">80m</span>
+                </div>
+                <div class="player downed">
+                    <div class="player-details">
+                        <span class="name">Target456</span>
+                        <span class="team ru">俄军</span>
+                    </div>
+                    <img src="assets/avatar.png" class="player-avatar">
+                </div>
+            </div>
+            <div class="down-status revived">
+                <i class="fas fa-heart"></i>
+                <span>已救起 - 由 Medic789 在 45秒后救起</span>
+            </div>
+            <div class="down-meta">
+                <span class="time">2024-03-20 15:45</span>
+                <span class="map">Narva</span>
+            </div>
+        </div>
+    </div>
+</div> 

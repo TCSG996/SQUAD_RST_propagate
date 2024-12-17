@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏记录 - Squad 服务器管理面板</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="history-page">
+        <div class="header">
+            <h1>游戏记录</h1>
+            <div class="filters">
+                <input type="date" class="date-picker">
+                <select class="map-filter">
+                    <option value="">所有地图</option>
+                    <option>Al Basrah</option>
+                    <option>Narva</option>
+                </select>
+                <button class="btn primary">搜索</button>
+            </div>
+        </div>
+
+        <div class="history-list">
+            <div class="history-item">
+                <div class="match-info">
+                    <h3>Al Basrah - RAAS v1</h3>
+                    <span class="time">2024-03-20 15:30</span>
+                </div>
+                <div class="teams-result">
+                    <div class="team-result winner">
+                        <span class="team-name">美军</span>
+                        <span class="score">0</span>
+                    </div>
+                    <div class="team-result">
+                        <span class="team-name">俄军</span>
+                        <span class="score">0</span>
+                    </div>
+                </div>
+                <button class="btn">查看详情</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/history.js"></script>
+</html> 

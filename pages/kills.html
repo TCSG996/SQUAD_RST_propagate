@@ -1,0 +1,51 @@
+<div class="kills-page">
+    <div class="header">
+        <h1>击杀记录</h1>
+        <div class="filters">
+            <div class="date-range">
+                <input type="date" class="date-picker">
+                <span>至</span>
+                <input type="date" class="date-picker">
+            </div>
+            <input type="text" class="search-input" placeholder="搜索玩家...">
+            <select class="weapon-filter">
+                <option value="">所有武器</option>
+                <option value="rifle">步枪</option>
+                <option value="mg">机枪</option>
+                <option value="sniper">狙击枪</option>
+                <option value="vehicle">载具</option>
+            </select>
+            <button class="btn primary"><i class="fas fa-search"></i> 搜索</button>
+        </div>
+    </div>
+
+    <div class="kills-list">
+        <div class="kill-item">
+            <div class="kill-info">
+                <div class="player killer">
+                    <!-- <img src="assets/avatar.png" class="player-avatar"> -->
+                    <div class="player-details">
+                        <span class="name">Killer123</span>
+                        <span class="team us">美军</span>
+                    </div>
+                </div>
+                <div class="kill-details">
+                    <i class="fas fa-skull"></i>
+                    <span class="weapon">M4A1</span>
+                    <span class="distance">150m</span>
+                </div>
+                <div class="player victim">
+                    <div class="player-details">
+                        <span class="name">Victim456</span>
+                        <span class="team ru">俄军</span>
+                    </div>
+                    <!-- <img src="assets/avatar.png" class="player-avatar"> -->
+                </div>
+            </div>
+            <div class="kill-meta">
+                <span class="time">2024-03-20 15:30</span>
+                <span class="map">Al Basrah</span>
+            </div>
+        </div>
+    </div>
+</div> 

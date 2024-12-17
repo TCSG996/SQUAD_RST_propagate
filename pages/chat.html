@@ -1,0 +1,39 @@
+<div class="chat-page">
+    <div class="header">
+        <h1>聊天管理</h1>
+        <div class="chat-controls">
+            <button class="btn primary"><i class="fas fa-bullhorn"></i> 发送公告</button>
+            <button class="btn"><i class="fas fa-ban"></i> 禁言管理</button>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-filters">
+            <select class="channel-select">
+                <option value="all">所有频道</option>
+                <option value="team">团队频道</option>
+                <option value="squad">小队频道</option>
+                <option value="local">本地频道</option>
+            </select>
+            <input type="text" class="search-input" placeholder="搜索消息...">
+        </div>
+
+        <div class="chat-messages">
+            <div class="message-item">
+                <div class="message-header">
+                    <span class="player-name">Player123</span>
+                    <span class="channel-tag team">团队</span>
+                    <span class="time">10:30</span>
+                </div>
+                <div class="message-content">
+                    这是一条聊天消息
+                </div>
+                <div class="message-actions">
+                    <button class="btn small"><i class="fas fa-user-slash"></i> 禁言</button>
+                    <button class="btn small danger"><i class="fas fa-trash"></i> 删除</button>
+                </div>
+            </div>
+            <!-- 更多消息... -->
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>封禁管理 - Squad 服务器管理面板</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="bans-page">
+        <div class="header">
+            <h1>封禁管理</h1>
+            <button class="btn primary">添加封禁</button>
+        </div>
+
+        <div class="ban-filters">
+            <input type="text" placeholder="搜索玩家..." class="search-input">
+            <select>
+                <option value="all">所有状态</option>
+                <option value="active">生效中</option>
+                <option value="expired">已过期</option>
+            </select>
+        </div>
+
+        <div class="ban-list">
+            <div class="ban-item">
+                <div class="player-info">
+                    <h3>玩家名称</h3>
+                    <span class="steam-id">STEAM_0:1:123456789</span>
+                </div>
+                <div class="ban-details">
+                    <span class="reason">原因: 使用外挂</span>
+                    <span class="duration">持续时间: 永久</span>
+                    <span class="admin">管理员: Admin1</span>
+                </div>
+                <div class="actions">
+                    <button class="btn">编辑</button>
+                    <button class="btn danger">解封</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/bans.js"></script>
+</html> 

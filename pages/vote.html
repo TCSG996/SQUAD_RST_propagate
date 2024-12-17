@@ -1,0 +1,104 @@
+<div class="vote-page">
+    <div class="header">
+        <h1>投票管理</h1>
+        <div class="actions">
+            <button class="btn primary"><i class="fas fa-plus"></i> 发起投票</button>
+            <button class="btn"><i class="fas fa-cog"></i> 投票设置</button>
+        </div>
+    </div>
+
+    <div class="vote-container">
+        <!-- 当前投票 -->
+        <div class="current-vote">
+            <div class="section-title">
+                <i class="fas fa-poll"></i>
+                当前投票
+            </div>
+            <div class="vote-card active">
+                <div class="vote-header">
+                    <div class="vote-type map-change">
+                        <i class="fas fa-map"></i>
+                        换图投票
+                    </div>
+                    <div class="vote-status">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                        <span class="vote-count">13/20</span>
+                    </div>
+                </div>
+                <div class="vote-content">
+                    <div class="vote-title">是否切换到 Fallujah RAAS v1?</div>
+                    <div class="vote-options">
+                        <div class="option">
+                            <span class="label">同意</span>
+                            <span class="count">13</span>
+                        </div>
+                        <div class="option">
+                            <span class="label">反对</span>
+                            <span class="count">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vote-footer">
+                    <span class="time-left">剩余时间: 30秒</span>
+                    <div class="vote-actions">
+                        <button class="btn small"><i class="fas fa-check"></i> 通过</button>
+                        <button class="btn small danger"><i class="fas fa-times"></i> 否决</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 投票历史 -->
+        <div class="vote-history">
+            <div class="section-title">
+                <i class="fas fa-history"></i>
+                投票历史
+            </div>
+            <div class="history-filters">
+                <select class="type-filter">
+                    <option value="all">所有类型</option>
+                    <option value="map">换图投票</option>
+                    <option value="kick">踢人投票</option>
+                    <option value="admin">管理员投票</option>
+                </select>
+                <select class="result-filter">
+                    <option value="all">所有结果</option>
+                    <option value="passed">已通过</option>
+                    <option value="rejected">已否决</option>
+                    <option value="cancelled">已取消</option>
+                </select>
+                <input type="text" class="search-input" placeholder="搜索投票...">
+            </div>
+            <div class="history-list">
+                <div class="vote-card">
+                    <div class="vote-header">
+                        <div class="vote-type kick">
+                            <i class="fas fa-user-slash"></i>
+                            踢人投票
+                        </div>
+                        <div class="vote-result passed">已通过</div>
+                    </div>
+                    <div class="vote-content">
+                        <div class="vote-title">踢出玩家 Griefer123 (团队击杀)</div>
+                        <div class="vote-stats">
+                            <div class="stat">
+                                <span class="label">发起人</span>
+                                <span class="value">Player456</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">最终结果</span>
+                                <span class="value">15/5</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">持续时间</span>
+                                <span class="value">45秒</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

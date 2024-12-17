@@ -1,0 +1,75 @@
+<div class="admins-page">
+    <div class="header">
+        <h1>管理员管理</h1>
+        <div class="actions">
+            <button class="btn primary"><i class="fas fa-plus"></i> 添加管理员</button>
+            <button class="btn"><i class="fas fa-key"></i> 权限模板</button>
+        </div>
+    </div>
+
+    <div class="admins-container">
+        <div class="filters">
+            <input type="text" class="search-input" placeholder="搜索管理员...">
+            <select class="level-filter">
+                <option value="all">所有级别</option>
+                <option value="super">超级管理员</option>
+                <option value="admin">管理员</option>
+                <option value="mod">版主</option>
+            </select>
+            <button class="btn primary"><i class="fas fa-search"></i> 搜索</button>
+        </div>
+
+        <div class="admins-grid">
+            <div class="admin-card">
+                <div class="admin-header">
+                    <img src="assets/avatar.png" class="admin-avatar">
+                    <div class="admin-info">
+                        <h3>AdminUser123</h3>
+                        <span class="steam-id">STEAM_0:1:123456789</span>
+                    </div>
+                    <div class="admin-level super">超级管理员</div>
+                </div>
+                <div class="admin-permissions">
+                    <div class="permission-group">
+                        <div class="group-title">
+                            <i class="fas fa-shield-alt"></i>
+                            基础权限
+                        </div>
+                        <div class="permissions-list">
+                            <span class="permission-tag">踢出玩家</span>
+                            <span class="permission-tag">封禁管理</span>
+                            <span class="permission-tag">地图切换</span>
+                            <span class="permission-tag">聊天管理</span>
+                        </div>
+                    </div>
+                    <div class="permission-group">
+                        <div class="group-title">
+                            <i class="fas fa-tools"></i>
+                            高级权限
+                        </div>
+                        <div class="permissions-list">
+                            <span class="permission-tag">权限分配</span>
+                            <span class="permission-tag">配置修改</span>
+                            <span class="permission-tag">日志查看</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-details">
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <span>添加时间: 2024-01-15</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-user-shield"></i>
+                        <span>操作者: SuperAdmin</span>
+                    </div>
+                </div>
+                <div class="admin-actions">
+                    <button class="btn"><i class="fas fa-edit"></i> 编辑权限</button>
+                    <button class="btn"><i class="fas fa-history"></i> 操作记录</button>
+                    <button class="btn danger"><i class="fas fa-user-slash"></i> 停用</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,77 @@
+<div class="logs-page">
+    <div class="header">
+        <h1>系统日志</h1>
+        <div class="filters">
+            <div class="date-range">
+                <input type="date" class="date-picker">
+                <span>至</span>
+                <input type="date" class="date-picker">
+            </div>
+            <select class="type-filter">
+                <option value="all">所有类型</option>
+                <option value="admin">管理操作</option>
+                <option value="system">系统事件</option>
+                <option value="error">错误日志</option>
+            </select>
+            <select class="level-filter">
+                <option value="all">所有级别</option>
+                <option value="info">信息</option>
+                <option value="warning">警告</option>
+                <option value="error">错误</option>
+                <option value="critical">严重</option>
+            </select>
+            <input type="text" class="search-input" placeholder="搜索日志...">
+            <button class="btn primary"><i class="fas fa-search"></i> 搜索</button>
+        </div>
+    </div>
+
+    <div class="logs-container">
+        <div class="logs-actions">
+            <button class="btn"><i class="fas fa-download"></i> 导出日志</button>
+            <button class="btn danger"><i class="fas fa-trash"></i> 清理日志</button>
+        </div>
+        
+        <div class="logs-list">
+            <div class="log-item error">
+                <div class="log-icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="log-content">
+                    <div class="log-header">
+                        <span class="time">2024-03-20 15:30:45</span>
+                        <span class="type">错误</span>
+                        <span class="source">系统</span>
+                    </div>
+                    <div class="log-message">
+                        服务器配置加载失败: 无法连接到数据库
+                    </div>
+                    <div class="log-details">
+                        <pre>Error: Connection refused at Database.connect (db.js:45)</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="log-item info">
+                <div class="log-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="log-content">
+                    <div class="log-header">
+                        <span class="time">2024-03-20 15:28:30</span>
+                        <span class="type">信息</span>
+                        <span class="source">管理员</span>
+                    </div>
+                    <div class="log-message">
+                        管理员 Admin1 更新了服务器配置
+                    </div>
+                    <div class="log-details">
+                        <div class="changes">
+                            <span class="change-item">更新地图循环</span>
+                            <span class="change-item">修改最大人数: 100 -> 120</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

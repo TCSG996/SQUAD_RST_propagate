@@ -1,0 +1,68 @@
+<div class="squads-page">
+    <div class="header">
+        <h1>建队记录</h1>
+        <div class="filters">
+            <div class="date-range">
+                <input type="date" class="date-picker">
+                <span>至</span>
+                <input type="date" class="date-picker">
+            </div>
+            <input type="text" class="search-input" placeholder="搜索队长...">
+            <select class="type-filter">
+                <option value="all">所有类型</option>
+                <option value="infantry">步兵</option>
+                <option value="armor">装甲</option>
+                <option value="heli">直升机</option>
+            </select>
+            <button class="btn primary"><i class="fas fa-search"></i> 搜索</button>
+        </div>
+    </div>
+
+    <div class="squads-list">
+        <div class="squad-record">
+            <div class="squad-header">
+                <div class="squad-info">
+                    <div class="squad-type infantry">
+                        <i class="fas fa-users"></i>
+                        步兵小队
+                    </div>
+                    <h3>突击小队</h3>
+                    <div class="team-tag us">美军</div>
+                </div>
+                <div class="squad-stats">
+                    <div class="stat">
+                        <span class="label">存活时间</span>
+                        <span class="value">45分钟</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">最高人数</span>
+                        <span class="value">9人</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">击杀/死亡</span>
+                        <span class="value">25/12</span>
+                    </div>
+                </div>
+            </div>
+            <div class="squad-details">
+                <div class="leader-info">
+                    <img src="assets/avatar.png" class="leader-avatar">
+                    <div class="leader-details">
+                        <span class="name">Leader123</span>
+                        <span class="steam-id">STEAM_0:1:123456789</span>
+                    </div>
+                </div>
+                <div class="squad-timeline">
+                    <div class="timeline-event created">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>15:30 - 创建小队</span>
+                    </div>
+                    <div class="timeline-event disbanded">
+                        <i class="fas fa-minus-circle"></i>
+                        <span>16:15 - 解散小队</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
